@@ -6,7 +6,7 @@ import HelloWorld from './components/HelloWorld.vue'
 // import VTextInput from './modules/vuwi/components/TextInput/VTextInput.vue';
 // import VLine from './modules/vuwi/components/Line/VLine.vue';
 // import VSpinner from './modules/vuwi/components/Spinner/VSpinner.vue';
-import { VButton, VResizer, VSpinner, VTextInput, VPagination } from 'vuwi'
+import { VButton, VResizer, VSpinner, VTextInput, VPagination } from '@vuwi/vue'
 const text = ref('')
 const currentPage = ref(0)
 </script>
@@ -16,7 +16,7 @@ const currentPage = ref(0)
   <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
   <div class="flex flex-col w-full items-center">
     <div class="w-full max-w-lg p-4 space-y-2">
-      <VTextInput label="Name" v-model="text" :multiline="true"  class="border wi-border" />
+      <VTextInput label="Name" v-model="text" multiline class="border wi-border" />
       <VButton size="xl" class="wi-primary w-full">Submit</VButton>
       <VSpinner class="animate-spin" />
       <div class="w-full h-50 wi-highlight">
