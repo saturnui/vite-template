@@ -1267,7 +1267,7 @@ packages:
     dev: true
 
   file:../../../local_modules/vuwi-vue.tgz:
-    resolution: {integrity: sha512-kAbocuSYp/Q1+q8JxQUOUOg7iQjFxU9ZiZFRLfM1sPPkOYQ2axUBm3CNPgzD16knYnlybx+/ybxOOTrwnCYoOQ==, tarball: file:../../../local_modules/vuwi-vue.tgz}
+    resolution: {integrity: sha512-qASX4xxC4Bm5hRgcJamMl8tsOayEYJjMS58+7fHv6jnVqANb+GjXP9KR7dtI0LmxACkIK+tV3YJ634Xxj2wZZw==, tarball: file:../../../local_modules/vuwi-vue.tgz}
     name: '@vuwijs/vue'
     version: 0.0.0
     dependencies:
