@@ -3,35 +3,65 @@
 // Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
 import { ref } from 'vue-demi';
 import HelloWorld from './components/HelloWorld.vue'
-// import VTextInput from './modules/vuwi/components/TextInput/VTextInput.vue';
-// import VLine from './modules/vuwi/components/Line/VLine.vue';
-// import VSpinner from './modules/vuwi/components/Spinner/VSpinner.vue';
-import { VButton, VResizer, VSpinner, VTextInput, VPagination } from '@vuwi/vue'
+import { VAlert, VAvatar, VButton, VCollapse, VResizer, VSpinner, VTextInput, VPagination, VSkeletonListItem } from '@vuwi/vue'
 const text = ref('')
 const currentPage = ref(0)
 </script>
 
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
-  <div class="flex flex-col w-full items-center">
-    <div class="w-full max-w-lg p-4 space-y-2">
-      <VTextInput label="Name" v-model="text" multiline class="border wi-border" />
-      <VButton size="xl" class="wi-primary w-full">Submit</VButton>
-      <VSpinner class="animate-spin" />
-      <div class="w-full h-50 wi-highlight">
-        <VResizer class="h-full min-w-50 max-w-full">
-          <div class="relative h-full doc-preview">
-            <div class="absolute wi-tl h-10 w-10 bg-teal-500 wi-center wi-dark font-bold">TL</div>
-            <div class="absolute wi-tr h-10 w-10 bg-teal-500 wi-center wi-dark font-bold">TR</div>
-            <div class="absolute wi-tl h-10 w-10 bg-teal-500 wi-center wi-dark font-bold">TL</div>
-            <div class="absolute wi-bl h-10 w-10 bg-teal-500 wi-center wi-dark font-bold">BL</div>
-            <div class="absolute wi-br h-10 w-10 bg-teal-500 wi-center wi-dark font-bold">BR</div>
-          </div>
-        </VResizer>
-      </div>
-      <div class="bg-red-500 p-4 rounded">
-        <VPagination v-model="currentPage" :length="12" />
+  <div class="wi-main">
+    <div class="flex flex-col w-full items-center">
+      <div class="w-full max-w-lg p-4 space-y-6">
+        <VAlert class="bg-purple-200 text-purple-500 text-sm font-medium" role="alert">
+          <span class="p-3">I'm an alert that informs you of stuff.</span>
+        </VAlert>
+        <VAvatar name="Eddie Van Halen" size="xl" class="wi-avatar-xl rounded-full bg-purple-600 text-white" />
+        <VTextInput
+          label="Name"
+          placeholder="Hi there"
+          v-model="text"
+          multiline
+          class="border wi-border"
+        />
+        <VButton size="xl" class="wi-primary w-full">Submit</VButton>
+        <VSpinner class="animate-spin" />
+        <div class="w-full h-50 bg-dark-700">
+          <VResizer class="h-full min-w-50 max-w-full bg-dark-100">
+            <div class="relative h-full">
+              <div class="absolute wi-tl h-10 w-10 bg-teal-500 text-white wi-center font-bold">TL</div>
+              <div class="absolute wi-tr h-10 w-10 bg-teal-500 text-white wi-center font-bold">TR</div>
+              <div class="absolute wi-bl h-10 w-10 bg-teal-500 text-white wi-center font-bold">BL</div>
+              <div class="absolute wi-br h-10 w-10 bg-teal-500 text-white wi-center font-bold">BR</div>
+            </div>
+          </VResizer>
+        </div>
+        <VSpinner
+          class="wi-slowest w-20 h-20 min-w-8 min-h-8 border-10 border-r-yellow-400 border-l-green-400 border-t-blue-400 border-b-red-400"
+          role="status"
+        >
+          <span class="sr-only">Loading...</span>
+        </VSpinner>
+        <VPagination v-model="currentPage" :length="12" :total-visible="5" />
+        <div>
+          <VCollapse v-for="i in 3" :key="i" group="myCustomGroup" class="w-full -mb-1 last:mb-0">
+            <template #header="{ open: isOpen }">
+              <div
+                class="relative p-3 flex items-center gap-4 w-full border wi-border z-0 wi-light-dark"
+              >
+                <span class="font-bold flex-grow">Title here</span>
+                <!-- <tabler-chevron-up
+              class="transition duration-150 transform"
+              :class="{ 'rotate-180': isOpen }"
+                />-->
+                >
+              </div>
+            </template>
+            <div class="border-b border-r border-l wi-border wi-light-dark p-4">
+              <VSkeletonListItem />
+              <VSkeletonListItem />
+            </div>
+          </VCollapse>
+        </div>
       </div>
     </div>
   </div>
