@@ -5,7 +5,7 @@
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
-    "install:vuwi": "rm pnpm-lock.yaml && rm -rf node_modules && pnpm i"
+    "install:vuwi": "rm -rf pnpm-lock.yaml && rm -rf node_modules && pnpm i"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.2",
@@ -14,11 +14,11 @@
     "vee-validate": "^4.5.5",
     "vue": "^3.2.25",
     "vue-demi": "latest",
-    "@vuwi/vue": "file:~/local_modules/vuwi-vue.tgz"
+    "@vuwi/vue": "file:~/local_modules/vuwi-vue.tgz",
+    "@vuwi/plugin": "file:~/local_modules/vuwi-plugin.tgz"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.0.0",
-    "@vuwi/theme": "file:~/local_modules/vuwi-theme.tgz",
     "typescript": "^4.4.4",
     "vite": "^2.7.2",
     "vite-plugin-windicss": "^1.6.2",

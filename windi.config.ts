@@ -1,18 +1,19 @@
 import { defineConfig } from 'windicss/helpers'
 import colors from 'windicss/colors'
 import typography from 'windicss/plugin/typography'
+import { vuwi, safelist } from '@vuwi/plugin/dist/windicss'
 
 export default defineConfig({
   darkMode: 'class',
   attributify: false,
-
+  safelist,
   plugins: [
-    typography(), 
+    typography(),
+    vuwi(),
   ],
   theme: {
     extend: {
       colors: {
-
         primary: {
           light: '#0694ff', // For lighter primary color
           DEFAULT: '#1873e8', // Normal primary color

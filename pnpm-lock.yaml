@@ -4,7 +4,7 @@ specifiers:
   '@popperjs/core': ^2.11.2
   '@vitejs/plugin-vue': ^2.0.0
   '@vueuse/core': ^7.5.3
-  '@vuwi/theme': file:~/local_modules/vuwi-theme.tgz
+  '@vuwi/plugin': file:~/local_modules/vuwi-plugin.tgz
   '@vuwi/vue': file:~/local_modules/vuwi-vue.tgz
   maska: ^1.5.0
   typescript: ^4.4.4
@@ -18,7 +18,8 @@ specifiers:
 
 dependencies:
   '@popperjs/core': 2.11.2
-  '@vueuse/core': 7.5.4_vue@3.2.29
+  '@vueuse/core': 7.5.5_vue@3.2.29
+  '@vuwi/plugin': file:../../../local_modules/vuwi-plugin.tgz
   '@vuwi/vue': file:../../../local_modules/vuwi-vue.tgz
   maska: 1.5.0
   vee-validate: 4.5.8_vue@3.2.29
@@ -27,7 +28,6 @@ dependencies:
 
 devDependencies:
   '@vitejs/plugin-vue': 2.1.0_vite@2.7.13+vue@3.2.29
-  '@vuwi/theme': file:../../../local_modules/vuwi-theme.tgz
   typescript: 4.5.5
   vite: 2.7.13
   vite-plugin-windicss: 1.6.3_vite@2.7.13
@@ -270,8 +270,8 @@ packages:
   /@vue/shared/3.2.29:
     resolution: {integrity: sha512-BjNpU8OK6Z0LVzGUppEk0CMYm/hKDnZfYdjSmPOs0N+TR1cLKJAkDwW8ASZUvaaSLEi6d3hVM7jnWnX+6yWnHw==}
 
-  /@vueuse/core/7.5.4_vue@3.2.29:
-    resolution: {integrity: sha512-PKmyHN2lZuttGgKmsoMMqiSojSYYKraszilP0gpQIGcLt2YoLABaG3VFjdPs2tY6DM+HG3o70HuzOMEQCY8fqQ==}
+  /@vueuse/core/7.5.5_vue@3.2.29:
+    resolution: {integrity: sha512-RBDqmIoGfak4h3xdXa/Av+ibkb8NY044wEy6+PG2FAWNaID8/FkqmSFjbxogrbmpSX1yZ1PBHrM8DUp/FrIpbg==}
     peerDependencies:
       '@vue/composition-api': ^1.1.0
       vue: ^2.6.0 || ^3.2.0
@@ -281,13 +281,13 @@ packages:
       vue:
         optional: true
     dependencies:
-      '@vueuse/shared': 7.5.4_vue@3.2.29
+      '@vueuse/shared': 7.5.5_vue@3.2.29
       vue: 3.2.29
       vue-demi: 0.12.1_vue@3.2.29
     dev: false
 
-  /@vueuse/shared/7.5.4_vue@3.2.29:
-    resolution: {integrity: sha512-750RnGUEgg1+K4jGVkv7M5UOStAa/IjAInV6BugyBOvRYL2l1lcIDUi4V/qIKTlhd2oUAByCEnlqIpFD2a3tfw==}
+  /@vueuse/shared/7.5.5_vue@3.2.29:
+    resolution: {integrity: sha512-mzzTsotHQRPnPAChy8iCv6ek/90CKYhAFyMRgNsMxpT0afZJkbMO/X0OaOu/1NuGbgb8UVjlsWKmCUgKTOF5hA==}
     peerDependencies:
       '@vue/composition-api': ^1.1.0
       vue: ^2.6.0 || ^3.2.0
@@ -305,7 +305,7 @@ packages:
     resolution: {integrity: sha512-1kjdy4tyYLD4sCB4DS+3Lt1Odnde03z4Rz3EUqyWJ7SiBEWMgRk1L797SsgEH4+W1DjLBZLs1SVYzaTO/3UdJA==}
     dependencies:
       debug: 4.3.3
-      jiti: 1.12.9
+      jiti: 1.12.13
       windicss: 3.4.3
     transitivePeerDependencies:
       - supports-color
@@ -720,8 +720,8 @@ packages:
       has-tostringtag: 1.0.0
     dev: true
 
-  /jiti/1.12.9:
-    resolution: {integrity: sha512-TdcJywkQtcwLxogc4rSMAi479G2eDPzfW0fLySks7TPhgZZ4s/tM6stnzayIh3gS/db3zExWJyUx4cNWrwAmoQ==}
+  /jiti/1.12.13:
+    resolution: {integrity: sha512-OhsYlXc2HLjuHZML6Ay68/l0KT9lXMw9zo1+TMIaxW8c0TS+kJnxgx+he4yBPFiRHi7UIsG2ANZjHl2zU86j2g==}
     hasBin: true
     dev: true
 
@@ -954,8 +954,8 @@ packages:
     engines: {iojs: '>=1.0.0', node: '>=0.10.0'}
     dev: true
 
-  /rollup/2.66.0:
-    resolution: {integrity: sha512-L6mKOkdyP8HK5kKJXaiWG7KZDumPJjuo1P+cfyHOJPNNTK3Moe7zCH5+fy7v8pVmHXtlxorzaBjvkBMB23s98g==}
+  /rollup/2.66.1:
+    resolution: {integrity: sha512-crSgLhSkLMnKr4s9iZ/1qJCplgAgrRY+igWv8KhG/AjKOJ0YX/WpmANyn8oxrw+zenF3BXWDLa7Xl/QZISH+7w==}
     engines: {node: '>=10.0.0'}
     hasBin: true
     optionalDependencies:
@@ -1065,7 +1065,7 @@ packages:
       esbuild: 0.13.15
       postcss: 8.4.5
       resolve: 1.22.0
-      rollup: 2.66.0
+      rollup: 2.66.1
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
@@ -1075,8 +1075,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /vscode-css-languageservice/5.1.9:
-    resolution: {integrity: sha512-/tFOWeZBL3Oc9Zc+2MAi3rEwiXJTSZsvjB+M7nSjWLbGPUIjukUA7YzLgsBoUfR35sPJYnXWUkL56PdfIYM8GA==}
+  /vscode-css-languageservice/5.1.12:
+    resolution: {integrity: sha512-293C5C2732Rbhh3opTs+nQBpC5Dd+oYrEA8lc0OWdyt40oYmJ331FV7NMF1SLFSIcOFB5XveLiWUZak2oyc49Q==}
     dependencies:
       vscode-languageserver-textdocument: 1.0.3
       vscode-languageserver-types: 3.16.0
@@ -1093,8 +1093,8 @@ packages:
       vscode-uri: 3.0.3
     dev: true
 
-  /vscode-json-languageservice/4.1.10:
-    resolution: {integrity: sha512-IHliMEEYSY0tJjJt0ECb8ESx/nRXpoy9kN42WVQXgaqGyizFAf3jibSiezDQTrrY7f3kywXggCU+kkJEM+OLZQ==}
+  /vscode-json-languageservice/4.2.0:
+    resolution: {integrity: sha512-XNawv0Vdy/sUK0S+hGf7cq/qsVAbIniGJr89TvZOqMCNJmpgKTy1e8PL1aWW0uy6BfWMG7vxa5lZb3ypuFtuGQ==}
     dependencies:
       jsonc-parser: 3.0.0
       vscode-languageserver-textdocument: 1.0.3
@@ -1182,9 +1182,9 @@ packages:
       '@vue/shared': 3.2.29
       request-light: 0.5.7
       upath: 2.0.1
-      vscode-css-languageservice: 5.1.9
+      vscode-css-languageservice: 5.1.12
       vscode-html-languageservice: 4.2.1
-      vscode-json-languageservice: 4.1.10
+      vscode-json-languageservice: 4.2.0
       vscode-languageserver: 8.0.0-next.6
       vscode-languageserver-textdocument: 1.0.3
       vscode-pug-languageservice: 0.29.8
@@ -1260,11 +1260,11 @@ packages:
       toposort: 2.0.2
     dev: false
 
-  file:../../../local_modules/vuwi-theme.tgz:
-    resolution: {integrity: sha512-PdUHNy0NFr1tejRgk00q8HPQXL6wcpFqdwevuL56rHs/wlF/9xjN2Zh3c6Gi201sDdMM5JQLMg2zMbA3PIW4DQ==, tarball: file:../../../local_modules/vuwi-theme.tgz}
-    name: '@vuwi/theme'
+  file:../../../local_modules/vuwi-plugin.tgz:
+    resolution: {integrity: sha512-qaWn/2R9g1iCv0WCjCm3JKhMmn7TsGSyL9a7jJ4pm0Dw2qHLC61Tp2cZNoRgs3EkE4CcZQcTTScqDjuBJPZR0w==, tarball: file:../../../local_modules/vuwi-plugin.tgz}
+    name: '@vuwi/plugin'
     version: 0.0.0
-    dev: true
+    dev: false
 
   file:../../../local_modules/vuwi-vue.tgz:
     resolution: {integrity: sha512-qASX4xxC4Bm5hRgcJamMl8tsOayEYJjMS58+7fHv6jnVqANb+GjXP9KR7dtI0LmxACkIK+tV3YJ634Xxj2wZZw==, tarball: file:../../../local_modules/vuwi-vue.tgz}
@@ -1272,7 +1272,7 @@ packages:
     version: 0.0.0
     dependencies:
       '@popperjs/core': 2.11.2
-      '@vueuse/core': 7.5.4_vue@3.2.29
+      '@vueuse/core': 7.5.5_vue@3.2.29
       maska: 1.5.0
       mitt: 3.0.0
       vee-validate: 4.5.8_vue@3.2.29

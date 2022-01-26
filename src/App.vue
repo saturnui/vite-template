@@ -12,6 +12,7 @@ const currentPage = ref(0)
   <div class="wi-main">
     <div class="flex flex-col w-full items-center">
       <div class="w-full max-w-lg p-4 space-y-6">
+        <!-- <div class="wi-"></div> -->
         <VAlert class="bg-purple-200 text-purple-500 text-sm font-medium" role="alert">
           <span class="p-3">I'm an alert that informs you of stuff.</span>
         </VAlert>
