@@ -1,49 +1,45 @@
-@layer components {
-  .app {
-    &-pagination {
-      @apply flex items-center;
+.app-pagination {
+  @apply flex items-center;
 
-      button[link] {
-        @apply font-bold w-10 min-w-10 bg-transparent cursor-pointer rounded-full h-10 w-5;
+  button[link] {
+    @apply font-bold w-10 bg-transparent cursor-pointer rounded-full h-10;
 
-        &[active='true'] {
-          @apply !bg-purple-600 hover:!bg-purple-900 text-white rounded-full h-10 w-5;
-        }
+    &[active='true'] {
+      @apply !bg-purple-600 hover:!bg-purple-900 text-white rounded-full h-10 w-10;
+    }
+  }
+
+  div[name='more'] {
+    @apply flex flex-col w-10 font-bold text-center;
+
+    [name='page'] {
+      @apply hidden;
+    }
+
+    &[active='true'] {
+      @apply border-2 bg-purple-600 text-white h-10 flex justify-center rounded-full;
+
+      [name='page'] {
+        @apply block text-sm leading-tight -mb-2;
       }
 
-      div[name='more'] {
-        @apply flex flex-col w-10 min-w-10 font-bold text-center;
-
-        [name='page'] {
-          @apply hidden;
-        }
-
-        &[active='true'] {
-          @apply border-2 bg-purple-600 text-white h-10 flex justify-center rounded-full;
-
-          [name='page'] {
-            @apply block text-sm leading-tight -mb-2;
-          }
-
-          [name='dots'] {
-            @apply text-xs leading-tight;
-          }
-        }
+      [name='dots'] {
+        @apply text-xs leading-tight;
       }
+    }
+  }
 
-      button[left] {
-        @apply flex items-center justify-center rounded h-8 w-6 min-w-6 mr-2;
-        &[disabled] {
-          @apply opacity-20 pointer-events-none;
-        }
-      }
+  button[left] {
+    @apply flex items-center justify-center rounded h-8 w-6 mr-2;
+    &[disabled] {
+      @apply opacity-20 pointer-events-none;
+    }
+  }
 
-      button[right] {
-        @apply flex items-center justify-center rounded h-8 w-6 min-w-6 ml-2;
-        &[disabled] {
-          @apply opacity-20 pointer-events-none;
-        }
-      }
+  button[right] {
+    @apply flex items-center justify-center rounded h-8 w-6 ml-2;
+    &[disabled] {
+      @apply opacity-20 pointer-events-none;
     }
   }
 }

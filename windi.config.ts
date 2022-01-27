@@ -2,6 +2,7 @@ import { defineConfig } from 'windicss/helpers'
 import colors from 'windicss/colors'
 import typography from 'windicss/plugin/typography'
 import { vuwi, safelist } from '@vuwi/plugin/dist/windicss'
+// import safelist from '@vuwi/plugin/dist/safelist'
 
 export default defineConfig({
   darkMode: 'class',
