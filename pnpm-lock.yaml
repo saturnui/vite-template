@@ -34,16 +34,16 @@ dependencies:
   vue-demi: 0.12.1_vue@3.2.29
 
 devDependencies:
-  '@tailwindcss/aspect-ratio': 0.4.0_tailwindcss@3.0.16
-  '@tailwindcss/forms': 0.4.0_tailwindcss@3.0.16
-  '@tailwindcss/typography': 0.5.0_tailwindcss@3.0.16
+  '@tailwindcss/aspect-ratio': 0.4.0_tailwindcss@3.0.17
+  '@tailwindcss/forms': 0.4.0_tailwindcss@3.0.17
+  '@tailwindcss/typography': 0.5.0_tailwindcss@3.0.17
   '@vitejs/plugin-vue': 2.1.0_vite@2.7.13+vue@3.2.29
   autoprefixer: 10.4.2_postcss@8.4.5
   postcss: 8.4.5
   postcss-import: 14.0.2_postcss@8.4.5
   postcss-nesting: 10.1.2_postcss@8.4.5
   postcss-preset-env: 7.2.3_postcss@8.4.5
-  tailwindcss: 3.0.16_ef48b3b8837f8a23677bffe8f9cd866d
+  tailwindcss: 3.0.17_ef48b3b8837f8a23677bffe8f9cd866d
   typescript: 4.5.5
   vite: 2.7.13
   vue-tsc: 0.29.8_typescript@4.5.5
@@ -132,24 +132,24 @@ packages:
     resolution: {integrity: sha512-92FRmppjjqz29VMJ2dn+xdyXZBrMlE42AV6Kq6BwjWV7CNUW1hs2FtxSNLQE+gJhaZ6AAmYuO9y8dshhcBl7vA==}
     dev: false
 
-  /@tailwindcss/aspect-ratio/0.4.0_tailwindcss@3.0.16:
+  /@tailwindcss/aspect-ratio/0.4.0_tailwindcss@3.0.17:
     resolution: {integrity: sha512-WJu0I4PpqNPuutpaA9zDUq2JXR+lorZ7PbLcKNLmb6GL9/HLfC7w3CRsMhJF4BbYd/lkY6CfXOvkYpuGnZfkpQ==}
     peerDependencies:
       tailwindcss: '>=2.0.0 || >=3.0.0 || >=3.0.0-alpha.1'
     dependencies:
-      tailwindcss: 3.0.16_ef48b3b8837f8a23677bffe8f9cd866d
+      tailwindcss: 3.0.17_ef48b3b8837f8a23677bffe8f9cd866d
     dev: true
 
-  /@tailwindcss/forms/0.4.0_tailwindcss@3.0.16:
+  /@tailwindcss/forms/0.4.0_tailwindcss@3.0.17:
     resolution: {integrity: sha512-DeaQBx6EgEeuZPQACvC+mKneJsD8am1uiJugjgQK1+/Vt+Ai0GpFBC2T2fqnUad71WgOxyrZPE6BG1VaI6YqfQ==}
     peerDependencies:
       tailwindcss: '>=3.0.0 || >= 3.0.0-alpha.1'
     dependencies:
       mini-svg-data-uri: 1.4.3
-      tailwindcss: 3.0.16_ef48b3b8837f8a23677bffe8f9cd866d
+      tailwindcss: 3.0.17_ef48b3b8837f8a23677bffe8f9cd866d
     dev: true
 
-  /@tailwindcss/typography/0.5.0_tailwindcss@3.0.16:
+  /@tailwindcss/typography/0.5.0_tailwindcss@3.0.17:
     resolution: {integrity: sha512-1p/3C6C+JJziS/ghtG8ACYalbA2SyLJY27Pm33cVTlAoY6VQ7zfm2H64cPxUMBkVIlWXTtWHhZcZJPobMRmQAA==}
     peerDependencies:
       tailwindcss: '>=3.0.0 || >= 3.0.0-alpha.1 || insiders'
@@ -158,7 +158,7 @@ packages:
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       lodash.uniq: 4.5.0
-      tailwindcss: 3.0.16_ef48b3b8837f8a23677bffe8f9cd866d
+      tailwindcss: 3.0.17_ef48b3b8837f8a23677bffe8f9cd866d
     dev: true
 
   /@types/lodash/4.14.178:
@@ -415,7 +415,7 @@ packages:
       postcss: ^8.1.0
     dependencies:
       browserslist: 4.19.1
-      caniuse-lite: 1.0.30001302
+      caniuse-lite: 1.0.30001303
       fraction.js: 4.1.2
       normalize-range: 0.1.2
       picocolors: 1.0.0
@@ -451,8 +451,8 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001302
-      electron-to-chromium: 1.4.53
+      caniuse-lite: 1.0.30001303
+      electron-to-chromium: 1.4.54
       escalade: 3.1.1
       node-releases: 2.0.1
       picocolors: 1.0.0
@@ -475,8 +475,8 @@ packages:
     engines: {node: '>= 6'}
     dev: true
 
-  /caniuse-lite/1.0.30001302:
-    resolution: {integrity: sha512-YYTMO+tfwvgUN+1ZnRViE53Ma1S/oETg+J2lISsqi/ZTNThj3ZYBOKP2rHwJc37oCsPqAzJ3w2puZHn0xlLPPw==}
+  /caniuse-lite/1.0.30001303:
+    resolution: {integrity: sha512-/Mqc1oESndUNszJP0kx0UaQU9kEv9nNtJ7Kn8AdA0mNnH8eR1cj0kG+NbNuC1Wq/b21eA8prhKRA3bbkjONegQ==}
     dev: true
 
   /chalk/2.4.2:
@@ -655,8 +655,8 @@ packages:
       domhandler: 4.3.0
     dev: true
 
-  /electron-to-chromium/1.4.53:
-    resolution: {integrity: sha512-rFveSKQczlcav+H3zkKqykU6ANseFwXwkl855jOIap5/0gnEcuIhv2ecz6aoTrXavF6I/CEBeRnBnkB51k06ew==}
+  /electron-to-chromium/1.4.54:
+    resolution: {integrity: sha512-jRAoneRdSxnpRHO0ANpnEUtQHXxlgfVjrLOnQSisw1ryjXJXvS0pJaR/v2B7S++/tRjgEDp4Sjn5nmgb6uTySw==}
     dev: true
 
   /emmet/2.3.5:
@@ -1461,7 +1461,7 @@ packages:
     dependencies:
       autoprefixer: 10.4.2_postcss@8.4.5
       browserslist: 4.19.1
-      caniuse-lite: 1.0.30001302
+      caniuse-lite: 1.0.30001303
       css-blank-pseudo: 3.0.2_postcss@8.4.5
       css-has-pseudo: 3.0.3_postcss@8.4.5
       css-prefers-color-scheme: 6.0.2_postcss@8.4.5
@@ -1745,8 +1745,8 @@ packages:
     engines: {node: '>= 0.4'}
     dev: true
 
-  /tailwindcss/3.0.16_ef48b3b8837f8a23677bffe8f9cd866d:
-    resolution: {integrity: sha512-1L8E5Wr+o1c4kxxObNz2owJe94a7BLEMV+2Lz6wzprJdcs3ENSRR9t4OZf2OqtRNS/q/zFPuOKoLtQoy3Lrhhw==}
+  /tailwindcss/3.0.17_ef48b3b8837f8a23677bffe8f9cd866d:
+    resolution: {integrity: sha512-OiHUsmOKQQEg/ocXaLIjk/kOz8EK2jF6iPuc1bQ4NsmhYl7sk70UDsGV02AJvBAAiJhinPCkDR8egT9qY+ulCw==}
     engines: {node: '>=12.13.0'}
     hasBin: true
     peerDependencies:
@@ -2042,7 +2042,7 @@ packages:
     dev: false
 
   file:../../../local_modules/vuwi-plugin.tgz:
-    resolution: {integrity: sha512-qaWn/2R9g1iCv0WCjCm3JKhMmn7TsGSyL9a7jJ4pm0Dw2qHLC61Tp2cZNoRgs3EkE4CcZQcTTScqDjuBJPZR0w==, tarball: file:../../../local_modules/vuwi-plugin.tgz}
+    resolution: {integrity: sha512-DOlP/8Oj0po5Zss8uPgQs09u0Gvwn0AmNY6FPri8zC0NZOJ85Hs4Z6fDFsgQtUL3B2Z+HRw3M/Z6x06XLQKLvA==, tarball: file:../../../local_modules/vuwi-plugin.tgz}
     name: '@vuwi/plugin'
     version: 0.0.0
     dev: false
