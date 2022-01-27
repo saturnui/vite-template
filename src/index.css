@@ -1,4 +1,6 @@
 @import "./vuwi/components/Pagination.css";
+@import "./vuwi/components/Spinner.css";
+@import "./vuwi/components/TextInput.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
